@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		table{
+			height: 300px;
+			width: 800px;
+			border-collapse: collapse;
+
+		}
+		td{
+			border:1px solid;
+			cellspacing:;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<table>");
+		var str="九九乘法表";
+		document.write('<h1>'+str+'</h1>');
+		for(var n=1;n<=9;n++){
+			document.write("<tr>")
+			for(var m=1;m<=n;m++){
+				document.write("<td>"+n+"*"+m+"="+m*n+"</td>")
+			}
+			document.write("</tr>")
+		}
+		document.write("</table>");
+	</script>
+</body>
+</html>
